@@ -28,6 +28,7 @@ public class ServiciosJuego {
     public void ronda(ArrayList<Jugador> jugadores) {
         do {
             for (int i = 0; i < jugadores.size(); i++) {
+                System.out.println("Turno de Jgador id: " + jugadores.get(i).getId());
                 if (serviciosjugador.disparar(jugadores.get(i), serviciosrevolver)) {
                     System.out.println(jugadores.remove(i).toString());
                     System.out.println(jugadores.toString());
